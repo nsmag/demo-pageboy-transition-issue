@@ -3,5 +3,5 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'TestPageBoy' do
-    pod 'Pageboy', '~> 2.5.3'
+    pod 'Pageboy', '~> 2.5.4'
 end
