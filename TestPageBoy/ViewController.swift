@@ -35,7 +35,7 @@ class ViewController: PageboyViewController, PageboyViewControllerDataSource, Pa
         self.autoScroller.restartsOnScrollEnd = true
         self.autoScroller.enable(withIntermissionDuration: .custom(duration: 2))
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.95) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) {
             if let navigationController = self.navigationController {
                 navigationController.pushViewController(PushedViewController(), animated: true)
             }
