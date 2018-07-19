@@ -50,6 +50,8 @@ class ViewController: UITableViewController, PageboyViewControllerDataSource, Pa
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PageBoyTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! PageBoyTableViewCell
         
+        self.addChildViewController(cell.pageViewController)
+        
         return cell
     }
     
